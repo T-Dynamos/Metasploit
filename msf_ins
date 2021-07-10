@@ -56,7 +56,7 @@ class msf():
 		print()
 		print("[3] DOWNLOADING METASPLOIT...")
 		os.system('cd $HOME ')
-		os.system('git clone https://github.com/rapid7/metasploit-framework.git ')
+		os.system('git clone $HOME/https://github.com/rapid7/metasploit-framework.git ')
 		print()
 		print("Downloading Done...")
 		print()
