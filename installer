@@ -1,6 +1,6 @@
 apt install wget -y
 apt install python -y
-cd $PREFIX/usr/bin
+cd $PREFIX/bin
 wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/msf_ins
 wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ins.sh
 wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ruby.sh
