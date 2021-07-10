@@ -72,10 +72,10 @@ class msf():
 		os.system('python3 -m pip install requests')
 		print()
 		print("[3] DOWNLOADING METASPLOIT...")
-		os.system('cd $PREFIX ')
+		os.system('cd /data/data/com.termux/files/usr')
 		os.system('mkdir opt')
 		sys('HOME=/data/data/com.termux/files/home')
-                os.chdir(/data/data/com.termux/files/home)
+		os.chdir('/data/data/com.termux/files/home')
 		a = os.path.isfile('/data/data/com.termux/files/home/6.0.52.tar.gz')
 		if a == True:
 			print("File Already Exists")
