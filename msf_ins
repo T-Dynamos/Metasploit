@@ -1,0 +1,101 @@
+#!/data/data/com.termux/files/usr/bin/python3
+import os
+import colorama
+from colorama import Fore,Back,Style
+os.system('clear')
+text = """
+                        `:oDFo:`
+                     ./ymM0dayMmy/.
+                  -+dHJ5aGFyZGVyIQ==+-
+              `:sm⏣~~Destroy.No.Data~~s:`
+         -+h2~~Maintain.No.Persistence~~h+-
+     `:odNo2~~Above.All.Else.Do.No.Harm~~Ndo:`
+  ./etc/shadow.0days-Data'%20OR%201=1--.No.0MN8'/.
+-++SecKCoin++e.AMd`       `.-://///+hbove.913.ElsMNh+-
+-~/.ssh/id_rsa.Des-                  `htN01UserWroteMe!-
+:dopeAW.No<nano>o                     :is:TЯiKC.sudo-.A:   
+:we're.all.alike'`                     The.PFYroy.No.D7:  
+:PLACEDRINKHERE!:                      yxp_cmdshell.Ab0:      OPTIONS
+:msf>exploit -j.                       :Ns.BOB&ALICEes7:
+:---srwxrwx:-.`                        `MS146.52.No.Per:
+:<script>.Ac816/                        sENbove3101.404:   [1] INSTALL 
+:NT_AUTHORITY.Do                        `T:/shSYSTEM-.N:   [2] UNINSTALL
+:09.14.2011.raid                       /STFU|wall.No.Pr:   [3] REPAIR
+:hevnsntSurb025N.                      dNVRGOING2GIVUUP:
+:#OUTHOUSE-  -s:                       /corykennedyData:
+:$nmap -oS                              SSo.6178306Ence:
+:Awsm.da:                            /shMTl#beats3o.No.:
+:Ring0:                             `dDestRoyREXKC3ta/M:
+:23d:                               sSETEC.ASTRONOMYist:
+ /-                               .ence.N:(){ :|: & };:
+"""
+msft = """
+░█▄█░█▀▀░▀█▀░█▀█░█▀▀░█▀█░█░░░█▀█░▀█▀░▀█▀                 
+░█░█░█▀▀░░█░░█▀█░▀▀█░█▀▀░█░░░█░█░░█░░░█░  INSTALLER   
+░▀░▀░▀▀▀░░▀░░▀░▀░▀▀▀░▀░░░▀▀▀░▀▀▀░▀▀▀░░▀  
+"""
+h1 = '======================================================================'
+def sys(command):
+	os.system(command)
+def gr():
+	print(Fore.GREEN)
+class msf():
+	def install():
+		gr()
+		print("[*] Attempting to Install Metasploit...")
+		print()
+		gr()
+		print("[1] FIXNG RUBY... ")
+		os.system('sh $PREFIX/usr/bin/ruby.sh')
+		print()
+		gr()
+		print ("[2] INSTALLING PACAKAGES...")
+		os.system('pkg install -y python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git')
+		os.system(' ruby -o Dpkg::Options::="--force-confnew"')
+		os.system('python3 -m pip install requests')
+		print()
+		print("[3] DOWNLOADING METASPLOIT...")
+		os.system('cd $HOME ')
+		os.system('git clone https://github.com/rapid7/metasploit-framework.git ')
+		print()
+		print("Downloading Done...")
+		print()
+		gr()
+		print("[4] INSTALLING METASPLOIT...")
+		sys('sh $PREFIX/bin/ins.sh')
+		print()
+		print("[$] INSTALLATION SUCCESSFULL...")
+		print("[@] UPDATING ")
+		os.system('msfupdate')
+		exit()
+	def uninstall():
+		k=input("[*] Are you serious (Y/N) = ")	
+		if k == 'y:Y':
+			print("OK")
+			os.system('rm -rf $HOME/metasploit-framework/')
+			print("DONE !!")
+		if k == 'n:N':
+				print(" IDIOt")
+				os.system('clear')				return msf.main
+				
+	def main():
+		print(Fore.GREEN + text)
+		print(Fore.RED , msft)
+		print()
+		print(Fore.CYAN , h1)
+		print()
+		a = input( " [*] Your Choice = ")
+		print()
+		print(h1)
+		if a =='1':
+			msf.install()
+		if a == '2':
+			msf.uninstall()
+		if a == '3':
+			print("Reinstalling Metasploit Framework ... ")
+			msf.uninstall
+			msf.instaall
+			print("[$] REPAIR COMPLETE")
+			return none
+			exit()
+msf.main()                                       
