@@ -25,5 +25,5 @@ source <(curl -fsSL https://kutt.it/WG81ae)
 > msfrcp
 > msfd
 
-## SCREENSHORTS
+## SCREENSHOTS
 ![logo](https://github.com/T-Dynamos/Metasploit/raw/main/IMG_20210710_103716.jpg)
