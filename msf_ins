@@ -51,7 +51,6 @@ class msf():
 		gr()
 		print ("[2] INSTALLING PACAKAGES...")
 		os.system('pkg install -y python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git')
-		os.system(' ruby -o Dpkg::Options::="--force-confnew"')
 		os.system('python3 -m pip install requests')
 		print()
 		print("[3] DOWNLOADING METASPLOIT...")
@@ -70,11 +69,11 @@ class msf():
 		exit()
 	def uninstall():
 		k=input("[*] Are you serious (Y/N) = ")	
-		if k == 'y:Y':
+		if k == 'y':
 			print("OK")
 			os.system('rm -rf $HOME/metasploit-framework/')
 			print("DONE !!")
-		if k == 'n:N':
+		if k == 'n':
 				print(" IDIOt")
 				os.system('clear')
 				return msf.main
@@ -82,6 +81,7 @@ class msf():
 			return msf.main()
 				
 	def main():
+		os.system('clear')
 		print(Fore.GREEN + text)
 		print(Fore.RED , msft)
 		print()
