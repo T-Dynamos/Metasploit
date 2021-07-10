@@ -1,5 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/python3
 import os
+import tarfile 
+from downloader import download_file_ex
 import colorama
 from colorama import Fore,Back,Style
 os.system('clear')
@@ -61,14 +63,27 @@ class msf():
 		print()
 		gr()
 		print ("[2] INSTALLING PACAKAGES...")
+		file1=os.path.isfile('/data/data/com.termux/files/usr/opt/metasploit-framework/msfconsole')
+		if file1 == True:
+			print("The msf already exists")
+			print("Return Repair")
+			return msf.main
 		os.system('pkg install -y python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git')
 		os.system('python3 -m pip install requests')
 		print()
 		print("[3] DOWNLOADING METASPLOIT...")
 		os.system('cd $PREFIX ')
-		os.mkdir(opt)
-		os.system('cd opt')
-		os.system('git clone https://github.com/rapid7/metasploit-framework.git ')
+		os.system('mkdir opt')
+		sys('HOME=/data/data/com.termux/files/home')
+		sys('cd /data/data/com.termux/files/home')
+		a = os.path.isfile('/data/data/com.termux/files/home/6.0.52.tar.gz')
+		if a == True:
+			print("File Already Exists")
+		if a == False:
+			download_file_ex('https://github.com/rapid7/metasploit-framework/archive/refs/tags/6.0.52.tar.gz')
+		sys('tar -xvzf /data/data/com.termux/files/home/6.0.52.tar.gz -C /data/data/com.termux/files/home')
+		sys('mv $HOME/metasploit-framework-6.0.52 $PREFIX/opt/metasploit-framework/')
+		sys('rm 6.0.52.tar.gz')
 		print()
 		print("Downloading Done...")
 		print()
@@ -84,7 +99,7 @@ class msf():
 		k=input("[*] Are you serious (Y/N) = ")	
 		if k == 'y':
 			print("OK")
-			os.system('rm -rf $HOME/metasploit-framework/')
+			os.system('rm -rf $PREFIX/opt/metasploit-framework/')
 			print("DONE !!")
 		if k == 'n':
 				print(" IDIOt")
@@ -95,7 +110,7 @@ class msf():
 				
 	def main():
 		os.system('clear')
-		print(Fore.GREEN + text)
+		print(Fore.CYAN + text)
 		print(Fore.RED , msft)
 		print()
 		print(Fore.CYAN , h1)
@@ -104,15 +119,15 @@ class msf():
 		print()
 		print(h1)
 		if a =='1':
-			msf.install()
+		    msf.install()
 		if a == '2':
 			msf.uninstall()
 		if a == '3':
 			print("Reinstalling Metasploit Framework ... ")
-			msf.uninstall
-			msf.insta:ll
+			return msf.uninstall
+			return msf.install
 			print("[$] REPAIR COMPLETE")
-			return none
+
 			exit()
 		if a == 'a':
 			msf.update_program()
