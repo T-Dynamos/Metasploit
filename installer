@@ -7,3 +7,4 @@ wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ruby.sh
 chmod +x *
 echo 'Installation Successfull'
 echo 'Type = msf_ins to start'
+cd $HOME
