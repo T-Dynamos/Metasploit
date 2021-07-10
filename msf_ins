@@ -75,7 +75,7 @@ class msf():
 		os.system('cd $PREFIX ')
 		os.system('mkdir opt')
 		sys('HOME=/data/data/com.termux/files/home')
-		sys('cd /data/data/com.termux/files/home')
+                os.chdir(/data/data/com.termux/files/home)
 		a = os.path.isfile('/data/data/com.termux/files/home/6.0.52.tar.gz')
 		if a == True:
 			print("File Already Exists")
