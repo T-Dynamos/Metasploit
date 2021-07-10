@@ -22,3 +22,4 @@ rm -fr $PREFIX/lib/ruby/gems
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 pkg upgrade -y -o Dpkg::Options::="--force-confnew"
+apt install ruby 
