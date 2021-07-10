@@ -1,4 +1,6 @@
+<p align="center">
 ![logo](https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/368-3682149_this-metasploit-logo.png)
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
