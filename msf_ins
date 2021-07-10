@@ -44,11 +44,11 @@ class msf():
 		sys('rm $PREFIX/bin/msf_ins')
 		sys('rm $PREFIX/bin/ins.sh')
 		sys('rm $PREFIX/bin/ins.sh')
-		cd $PREFIX/bin/
+		sys('cd $PREFIX/bin/')
 		sys('wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/msf_ins')
 		sys('wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ins.sh')
 		sys('wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ruby.sh')
-		cd $HOME
+		sys('cd $HOME')
 		sys('clear')
 		return msf.main
 	def install():
