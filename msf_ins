@@ -76,7 +76,10 @@ class msf():
 			print("DONE !!")
 		if k == 'n:N':
 				print(" IDIOt")
-				os.system('clear')				return msf.main
+				os.system('clear')
+				return msf.main
+		else:
+			return msf.main()
 				
 	def main():
 		print(Fore.GREEN + text)
