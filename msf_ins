@@ -46,7 +46,7 @@ class msf():
 		print()
 		gr()
 		print("[1] FIXNG RUBY... ")
-		os.system('sh $PREFIX/usr/bin/ruby.sh')
+		os.system('sh $PREFIX/bin/ruby.sh')
 		print()
 		gr()
 		print ("[2] INSTALLING PACAKAGES...")
