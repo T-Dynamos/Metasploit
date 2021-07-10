@@ -19,10 +19,11 @@ source <(curl -fsSL https://kutt.it/WG81ae)
 
 ```
 ## FEATURES
-
+<p align="left">
 [1] It creates metasploit framework Fully functional
 [2] It install latest version 
 [3] You can use all commands as follows 
+</p>
 
 + msfconsole
 + msfupdate
