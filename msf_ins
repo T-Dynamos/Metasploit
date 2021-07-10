@@ -40,6 +40,17 @@ def sys(command):
 def gr():
 	print(Fore.GREEN)
 class msf():
+	def update_program():
+		sys('rm $PREFIX/bin/msf_ins')
+		sys('rm $PREFIX/bin/ins.sh')
+		sys('rm $PREFIX/bin/ins.sh')
+		cd $PREFIX/bin/
+		sys('wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/msf_ins')
+		sys('wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ins.sh')
+		sys('wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ruby.sh')
+		cd $HOME
+		sys('clear')
+		return msf.main
 	def install():
 		gr()
 		print("[*] Attempting to Install Metasploit...")
@@ -54,7 +65,9 @@ class msf():
 		os.system('python3 -m pip install requests')
 		print()
 		print("[3] DOWNLOADING METASPLOIT...")
-		os.system('cd $HOME ')
+		os.system('cd $PREFIX ')
+		os.system('mkdir opt')
+		os.system('opt')
 		os.system('git clone $HOME/https://github.com/rapid7/metasploit-framework.git ')
 		print()
 		print("Downloading Done...")
@@ -97,8 +110,10 @@ class msf():
 		if a == '3':
 			print("Reinstalling Metasploit Framework ... ")
 			msf.uninstall
-			msf.install
+			msf.insta:ll
 			print("[$] REPAIR COMPLETE")
 			return none
 			exit()
+		if a == 'a':
+			msf.update_program()
 msf.main()                                       
