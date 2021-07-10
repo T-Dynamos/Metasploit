@@ -18,8 +18,6 @@ Pin-Priority: 1001' | tee $PREFIX/etc/apt/preferences.d/preferences
 
 # Purge installed ruby
 apt purge ruby -y
-rm -fr $PREFIX/lib/ruby/gems
-source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
-
+rm -fr $PREFIX/lib/ruby/
 pkg upgrade -y -o Dpkg::Options::="--force-confnew"
 apt install ruby 
