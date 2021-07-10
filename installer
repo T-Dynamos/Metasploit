@@ -1,0 +1,9 @@
+apt install wget -y
+apr install python -y
+cd $PREFIX/usr/bin
+wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/msf_ins
+wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ins.sh
+wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ruby.sh
+chmod +x *
+echo 'Installation Successfull'
+echo 'Type = msf_ins to start'
