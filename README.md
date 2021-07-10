@@ -1,4 +1,4 @@
-![logo](https://en.m.wikipedia.org/wiki/File:Metasploit_logo_and_wordmark.png)  <br />
+![logo](https://en.m.wikipedia.org/wiki/File:Metasploit_logo_and_wordmark.png)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
