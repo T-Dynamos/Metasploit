@@ -19,11 +19,11 @@ source <(curl -fsSL https://kutt.it/WG81ae)
 * [1] It creates metasploit framework Fully functional
 * [2] It install latest version 
 * [3] You can use all commands as follows 
-> msfconsole
-> msfupdate
-> msfdb
-> msfrcp
-> msfd
++++++ msfconsole
+++++ msfupdate
++++ msfdb
+++ msfrcp
++ msfd
 
 ## SCREENSHOTS
 ![logo](https://github.com/T-Dynamos/Metasploit/raw/main/IMG_20210710_103716.jpg)
