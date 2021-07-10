@@ -11,17 +11,17 @@
   <img src="https://img.shields.io/github/stars/T-Dynamos/Metasploit?style=for-the-badge">
 </p>
 
-# Metasploit
+## Metasploit
 Install Metasploit latest version in all linux devices including Termux (Android)
-## Single Command Install
+# Single Command Install
 ```
 source <(curl -fsSL https://kutt.it/WG81ae) 
 
 ```
-# FEATURES
-* [1] It creates metasploit framework Fully functional
-* [2] It install latest version 
-* [3] You can use all commands as follows 
+## FEATURES
+# [1] It creates metasploit framework Fully functional
+# [2] It install latest version 
+# [3] You can use all commands as follows 
 + msfconsole
 + msfupdate
 + msfdb
