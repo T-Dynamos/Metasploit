@@ -1,4 +1,4 @@
-![logo](https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=734b5445df0b441a995078a85d3f406f&metadata=01)  <br />
+![logo](https://en.m.wikipedia.org/wiki/File:Metasploit_logo_and_wordmark.png)  <br />
 
 <p align="center">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
