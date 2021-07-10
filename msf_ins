@@ -97,7 +97,7 @@ class msf():
 		if a == '3':
 			print("Reinstalling Metasploit Framework ... ")
 			msf.uninstall
-			msf.instaall
+			msf.install
 			print("[$] REPAIR COMPLETE")
 			return none
 			exit()
