@@ -1,5 +1,6 @@
 <p align="center">
-  < img src="https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/368-3682149_this-metasploit-logo.png">
+
+  <img src="https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/368-3682149_this-metasploit-logo.png">
 </p>
 
 <p align="center">
