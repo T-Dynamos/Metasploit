@@ -1,4 +1,4 @@
-cd $$PREFIX/opt/metasploit-framework
+cd $PREFIX/opt/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
 gem install bundler
