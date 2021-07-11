@@ -14,9 +14,26 @@ $PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
 rm ./modules/auxiliary/gather/http_pdf_authors.rb
 if [ -e $PREFIX/bin/msfconsole ];then
 	rm $PREFIX/bin/msfconsole
+
 fi
 if [ -e $PREFIX/bin/msfvenom ];then
 	rm $PREFIX/bin/msfvenom
+
+fi
+if [ -e $PREFIX/bin/msfdb];then
+	rm $PREFIX/bin/msfdb
+
+fi
+if [ -e $PREFIX/bin/msfd];then
+	rm $PREFIX/bin/msfd
+
+fi
+if [ -e $PREFIX/bin/msfrpc ];then
+	rm $PREFIX/bin/msfrpc
+
+if [ -e $PREFIX/bin/msfupdate ];then
+	rm $PREFIX/bin/msfupdate
+
 fi
 ln -s PREFIX/opt/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
 ln -s PREFIX/opt/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
