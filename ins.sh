@@ -20,11 +20,11 @@ if [ -e $PREFIX/bin/msfvenom ];then
 	rm $PREFIX/bin/msfvenom
 
 fi
-if [ -e $PREFIX/bin/msfdb];then
+if [ -e $PREFIX/bin/msfdb ];then
 	rm $PREFIX/bin/msfdb
 
 fi
-if [ -e $PREFIX/bin/msfd];then
+if [ -e $PREFIX/bin/msfd ];then
 	rm $PREFIX/bin/msfd
 
 fi
