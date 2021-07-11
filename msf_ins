@@ -87,18 +87,18 @@ class msf():
 		sys('mv $PREFIX/opt/metasploit-framework-6.0.52 $PREFIX/opt/metasploit-framework/')
 		sys('rm 6.0.52.tar.gz')
 		print()
-		print("Downloading Done...")
+		heading("Downloading Done...")
 		print()
 		gr()
-		print("[4] INSTALLING METASPLOIT...")
+		heading("INSTALLING METASPLOIT...")
 		sys('sh $PREFIX/bin/ins.sh')
 		print()
-		print("[$] INSTALLATION SUCCESSFULL...")
-		print("[@] UPDATING ")
+		haeding(" INSTALLATION SUCCESSFULL...")
+		headinh(" UPDATING ")
 		os.system('msfupdate')
 		exit()
 	def uninstall():
-		k=input("[*] Are you serious (Y/N) = ")	
+		k=input(" Are you serious (Y/N) = ")	
 		if k == 'y':
 			print("OK")
 			os.system('rm -rf $PREFIX/opt/metasploit-framework/')
@@ -112,7 +112,7 @@ class msf():
 				
 	def main():
 		os.system('clear')
-		print(Fore.CYAN + text)
+		print(Fore.MAGENTA +Style.BRIGHT + text)
 		print(Fore.RED , msft)
 		print()
 		print(Fore.CYAN , h1)
@@ -128,7 +128,7 @@ class msf():
 			print("Reinstalling Metasploit Framework ... ")
 			return msf.uninstall
 			return msf.install
-			print("[$] REPAIR COMPLETE")
+			heading(" REPAIR COMPLETE")
 
 			exit()
 		if a == 'a':
