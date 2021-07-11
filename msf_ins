@@ -93,8 +93,8 @@ class msf():
 		heading("INSTALLING METASPLOIT...")
 		sys('sh $PREFIX/bin/ins.sh')
 		print()
-		haeding(" INSTALLATION SUCCESSFULL...")
-		headinh(" UPDATING ")
+		heading(" INSTALLATION SUCCESSFULL...")
+		heading(" UPDATING ")
 		os.system('msfupdate')
 		exit()
 	def uninstall():
