@@ -37,7 +37,8 @@ msft = """
 """
 h1 = '======================================================================'
 def heading(h11):
-	print(Fore.BLUE+ "["+ Fore.RED"*" + Fore.BLUE + "]" , Fore.YELLOW + Style.BRIGHT + h11 + Fore.GREEN)
+	print(Fore.BLUE+ "["+ Fore.RED + "*" + Fore.BLUE + "]" , Fore.YELLOW + Style.BRIGHT + h11 )
+	print(Fore.GREEN)
 def sys(command):
 	os.system(command)
 def gr():
