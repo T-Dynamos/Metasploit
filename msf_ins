@@ -77,14 +77,12 @@ class msf():
 		os.system('cd /data/data/com.termux/files/usr')
 		os.system('mkdir /data/data/com.termux/files/usr/opt')
 		sys('HOME=/data/data/com.termux/files/home')
-		os.chdir('/data/data/com.termux/files/home')
+		os.chdir('/data/data/com.termux/files/usr/opt')
 		a = os.path.isfile('/data/data/com.termux/files/home/6.0.52.tar.gz')
 		if a == True:
 			print("File Already Exists")
 		if a == False:
-			sys('wget https://github.com/rapid7/metasploit-framework/archive/refs/tags/6.0.52.tar.gz')
-		sys('tar -xvzf /data/data/com.termux/files/home/6.0.52.tar.gz -C /data/data/com.termux/files/usr/opt')
-		sys('mv $PREFIX/opt/metasploit-framework-6.0.52 $PREFIX/opt/metasploit-framework/')
+			sys('git clone https://github.com/rapid7/metasploit-framework.git')
 		sys('rm 6.0.52.tar.gz')
 		print()
 		heading("Downloading Done...")
