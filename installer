@@ -1,5 +1,6 @@
 apt install wget -y
 apt install python -y
+pip install colorama 
 cd $PREFIX/bin
 wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/msf_ins
 wget https://raw.githubusercontent.com/T-Dynamos/Metasploit/main/ins.sh
