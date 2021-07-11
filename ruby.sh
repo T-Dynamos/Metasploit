@@ -20,4 +20,4 @@ Pin-Priority: 1001' | tee $PREFIX/etc/apt/preferences.d/preferences
 apt purge ruby -y
 rm -fr $PREFIX/lib/ruby/
 pkg upgrade -y -o Dpkg::Options::="--force-confnew"
-apt install ruby 
+apt install ruby -y
