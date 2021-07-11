@@ -1,7 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/python3
 import os
 import tarfile 
-from downloader import download_file_ex
 import colorama
 from colorama import Fore,Back,Style
 os.system('clear')
@@ -37,6 +36,8 @@ msft = """
 ░▀░▀░▀▀▀░░▀░░▀░▀░▀▀▀░▀░░░▀▀▀░▀▀▀░▀▀▀░░▀  
 """
 h1 = '======================================================================'
+def heading(h11):
+	print(Fore.BLUE+ "["+ Fore.RED"*" + Fore.BLUE + "]" , Fore.GREEN +h11)
 def sys(command):
 	os.system(command)
 def gr():
@@ -55,14 +56,14 @@ class msf():
 		return msf.main
 	def install():
 		gr()
-		print("[*] Attempting to Install Metasploit...")
+		heading("Attempting to Install Metasploit...")
 		print()
 		gr()
-		print("[1] FIXNG RUBY... ")
+		heading(" FIXNG RUBY... ")
 		os.system('sh $PREFIX/bin/ruby.sh')
 		print()
 		gr()
-		print ("[2] INSTALLING PACAKAGES...")
+		heading(" INSTALLING PACAKAGES...")
 		file1=os.path.isfile('/data/data/com.termux/files/usr/opt/metasploit-framework/msfconsole')
 		if file1 == True:
 			print("The msf already exists")
@@ -71,17 +72,17 @@ class msf():
 		os.system('pkg install -y python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git')
 		os.system('python3 -m pip install requests')
 		print()
-		print("[3] DOWNLOADING METASPLOIT...")
+		heading("DOWNLOADING METASPLOIT...")
 		os.system('cd /data/data/com.termux/files/usr')
-		os.system('mkdir opt')
+		os.system('mkdir /data/data/com.termux/files/usr/opt')
 		sys('HOME=/data/data/com.termux/files/home')
 		os.chdir('/data/data/com.termux/files/home')
 		a = os.path.isfile('/data/data/com.termux/files/home/6.0.52.tar.gz')
 		if a == True:
 			print("File Already Exists")
 		if a == False:
-			download_file_ex('https://github.com/rapid7/metasploit-framework/archive/refs/tags/6.0.52.tar.gz')
-		sys('tar -xvzf /data/data/com.termux/files/home/6.0.52.tar.gz -C /data/data/com.termux/files/home')
+			sys('wget https://github.com/rapid7/metasploit-framework/archive/refs/tags/6.0.52.tar.gz')
+		sys('tar -xvzf /data/data/com.termux/files/home/6.0.52.tar.gz -C /data/data/com.termux/files/usr/opt')
 		sys('mv $HOME/metasploit-framework-6.0.52 $PREFIX/opt/metasploit-framework/')
 		sys('rm 6.0.52.tar.gz')
 		print()
