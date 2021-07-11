@@ -37,7 +37,7 @@ msft = """
 """
 h1 = '======================================================================'
 def heading(h11):
-	print(Fore.BLUE+ "["+ Fore.RED"*" + Fore.BLUE + "]" , Fore.GREEN +h11)
+	print(Fore.BLUE+ "["+ Fore.RED"*" + Fore.BLUE + "]" , Fore.YELLOW + Style.BRIGHT + h11 + Fore.GREEN)
 def sys(command):
 	os.system(command)
 def gr():
@@ -83,7 +83,7 @@ class msf():
 		if a == False:
 			sys('wget https://github.com/rapid7/metasploit-framework/archive/refs/tags/6.0.52.tar.gz')
 		sys('tar -xvzf /data/data/com.termux/files/home/6.0.52.tar.gz -C /data/data/com.termux/files/usr/opt')
-		sys('mv $HOME/metasploit-framework-6.0.52 $PREFIX/opt/metasploit-framework/')
+		sys('mv $PREFIX/opt/metasploit-framework-6.0.52 $PREFIX/opt/metasploit-framework/')
 		sys('rm 6.0.52.tar.gz')
 		print()
 		print("Downloading Done...")
