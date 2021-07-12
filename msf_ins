@@ -123,7 +123,7 @@ class msf():
 		if a == '2':
 			msf.uninstall()
 		if a == '3':
-			print("Reinstalling Metasploit Framework ... ")
+			heading("Reinstalling Metasploit Framework ... ")
 			return msf.uninstall
 			return msf.install
 			heading(" REPAIR COMPLETE")
