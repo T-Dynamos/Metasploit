@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/python3
 import os
-import tarfile 
+import time
 import colorama
 from colorama import Fore,Back,Style
 os.system('clear')
@@ -30,12 +30,41 @@ text = """
 :23d:                               sSETEC.ASTRONOMYist:
  /-                               .ence.N:(){ :|: & };:
 """
+
+disc = """ 
+
+================= TERMUX METASPLOIT DISCLAIMER =============
+
+Metasploit Framework and its 
+dependencies are being sideloaded.  That solution makes
+package potentially 
+unstable.  We do not guarantee compatibility of installed
+Ruby modules with our
+ Ruby interpreter version and general compatibility with
+Android OS.
+	
+It is highly recommended to have a stable Internet connection 
+and clean Termux environment with up-to-date packages before
+installing Metasploit.
+	
+Package is intended to be used by experienced users. 
+ Do not ask Termux developers about how
+ to use Metasploit, we won't do so and generally are not helping
+anyone with topics related
+to hacking.
+
+Installation will be started in 10 seconds, thanks for attention
+
+ ===============================================================
+	 
+"""
+
 msft = """
 ░█▄█░█▀▀░▀█▀░█▀█░█▀▀░█▀█░█░░░█▀█░▀█▀░▀█▀                 
 ░█░█░█▀▀░░█░░█▀█░▀▀█░█▀▀░█░░░█░█░░█░░░█░  INSTALLER   
 ░▀░▀░▀▀▀░░▀░░▀░▀░▀▀▀░▀░░░▀▀▀░▀▀▀░▀▀▀░░▀  
 """
-h1 = '======================================================================'
+h1 = '===================================================================='
 def heading(h11):
 	print(Fore.BLUE+ "["+ Fore.RED + "*" + Fore.BLUE + "]" , Fore.YELLOW + Style.BRIGHT + h11 )
 	print(Fore.GREEN)
@@ -58,6 +87,9 @@ class msf():
 	def install():
 		gr()
 		heading("Attempting to Install Metasploit...")
+		print()
+		print(disc)
+		time.sleep(10)
 		print()
 		gr()
 		heading(" FIXNG RUBY... ")
@@ -83,7 +115,6 @@ class msf():
 			print("File Already Exists")
 		if a == False:
 			sys('git clone https://github.com/rapid7/metasploit-framework.git')
-		sys('rm 6.0.52.tar.gz')
 		print()
 		heading("Downloading Done...")
 		print()
@@ -100,6 +131,9 @@ class msf():
 		if k == 'y':
 			print("OK")
 			os.system('rm -rf $PREFIX/opt/metasploit-framework/')
+			os.remove('/data/data/com.termux/files/usr/etc/apt/sources.list.d/gushmazuko.list')
+			os.system('apt remove ruby')
+			os.system('apt install ruby')
 			print("DONE !!")
 		if k == 'n':
 				print(" IDIOt")
