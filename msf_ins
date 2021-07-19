@@ -124,8 +124,7 @@ class msf():
 		print()
 		heading(" INSTALLATION SUCCESSFULL...")
 		heading(" UPDATING ")
-		os.system('msfupdate')
-		exit()
+		os.system('msfupdate && msfconsole')
 	def uninstall():
 		k=input(" Are you serious (Y/N) = ")	
 		if k == 'y':
