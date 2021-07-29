@@ -4,33 +4,6 @@ import time
 import colorama
 from colorama import Fore,Back,Style
 os.system('clear')
-text = """
-                        `:oDFo:`
-                     ./ymM0dayMmy/.
-                  -+dHJ5aGFyZGVyIQ==+-
-              `:sm⏣~~Destroy.No.Data~~s:`
-         -+h2~~Maintain.No.Persistence~~h+-
-     `:odNo2~~Above.All.Else.Do.No.Harm~~Ndo:`
-  ./etc/shadow.0days-Data'%20OR%201=1--.No.0MN8'/.
--++SecKCoin++e.AMd`       `.-://///+hbove.913.ElsMNh+-
--~/.ssh/id_rsa.Des-                  `htN01UserWroteMe!-
-:dopeAW.No<nano>o                     :is:TЯiKC.sudo-.A:   
-:we're.all.alike'`                     The.PFYroy.No.D7:  
-:PLACEDRINKHERE!:                      yxp_cmdshell.Ab0:      OPTIONS
-:msf>exploit -j.                       :Ns.BOB&ALICEes7:
-:---srwxrwx:-.`                        `MS146.52.No.Per:
-:<script>.Ac816/                        sENbove3101.404:   [1] INSTALL 
-:NT_AUTHORITY.Do                        `T:/shSYSTEM-.N:   [2] UNINSTALL
-:09.14.2011.raid                       /STFU|wall.No.Pr:   [3] REPAIR
-:hevnsntSurb025N.                      dNVRGOING2GIVUUP:
-:#OUTHOUSE-  -s:                       /corykennedyData:
-:$nmap -oS                              SSo.6178306Ence:
-:Awsm.da:                            /shMTl#beats3o.No.:
-:Ring0:                             `dDestRoyREXKC3ta/M:
-:23d:                               sSETEC.ASTRONOMYist:
- /-                               .ence.N:(){ :|: & };:
-"""
-
 disc = """ 
 
 ================= TERMUX METASPLOIT DISCLAIMER =============
@@ -59,12 +32,12 @@ Installation will be started in 10 seconds, thanks for attention
 	 
 """
 
-msft = """
+text = """
 ░█▄█░█▀▀░▀█▀░█▀█░█▀▀░█▀█░█░░░█▀█░▀█▀░▀█▀                 
-░█░█░█▀▀░░█░░█▀█░▀▀█░█▀▀░█░░░█░█░░█░░░█░  INSTALLER   
+░█░█░█▀▀░░█░░█▀█░▀▀█░█▀▀░█░░░█░█░░█░░░█░  
 ░▀░▀░▀▀▀░░▀░░▀░▀░▀▀▀░▀░░░▀▀▀░▀▀▀░▀▀▀░░▀  
-"""
-h1 = '===================================================================='
+Coders = T-Dynamos | Ansh Dadwal | Thanks = @BaapG"""
+h1 = '==============================='
 def heading(h11):
 	print(Fore.BLUE+ "["+ Fore.RED + "*" + Fore.BLUE + "]" , Fore.YELLOW + Style.BRIGHT + h11 )
 	print(Fore.GREEN)
@@ -144,10 +117,17 @@ class msf():
 	def main():
 		os.system('clear')
 		print(Fore.MAGENTA +Style.BRIGHT + text)
-		print(Fore.RED , msft)
+		print(Fore.GREEN)
+		print(h1)
 		print()
-		print(Fore.CYAN , h1)
+		print("Choose Any Option")
 		print()
+		print("[1] Install")
+		print("[2] Uninstall")
+		print("[3] Repair")
+		print()
+		print(h1)
+		print(Fore.CYAN)
 		a = input( " [*] Your Choice = ")
 		print()
 		print(h1)
