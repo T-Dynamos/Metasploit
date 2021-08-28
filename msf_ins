@@ -88,7 +88,7 @@ class msf():
 			print("File Already Exists")
 		if a == False:
 			sys('git clone https://github.com/rapid7/metasploit-framework.git')
-			msfpath = os.path.isfile('/data/data/com.termux/files/usr/opt/msfconsole')
+			msfpath = os.path.isfile('/data/data/com.termux/files/usr/opt/metasploit-framework/msfconsole')
 			if msfpath == False:
 				print()
 				heading(Fore.RED + "DOWNLOAD   FAILED !! ")
