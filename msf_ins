@@ -88,6 +88,13 @@ class msf():
 			print("File Already Exists")
 		if a == False:
 			sys('git clone https://github.com/rapid7/metasploit-framework.git')
+			msfpath = os.path.isfile('/data/data/com.termux/files/usr/opt/msfconsole')
+			if msfpath == False:
+				print()
+				heading(Fore.RED + "DOWNLOAD   FAILED !! ")
+				exit()
+			if msfpath == True:
+				pass
 		print()
 		heading("Downloading Done...")
 		print()
@@ -97,7 +104,8 @@ class msf():
 		print()
 		heading(" INSTALLATION SUCCESSFULL...")
 		heading(" UPDATING ")
-		os.system('msfupdate && msfconsole')
+		os.system('msfconsole')
+		heading(Fore.RED + 'Installation Failed :( ')
 	def uninstall():
 		k=input(" Are you serious (Y/N) = ")	
 		if k == 'y':
@@ -120,7 +128,7 @@ class msf():
 		print(Fore.GREEN)
 		print(h1)
 		print()
-		print("Choose Any Option")
+		print(Fore.CYAN + "Choose Any Option" + Fore.GREEN)
 		print()
 		print("[1] Install")
 		print("[2] Uninstall")
