@@ -2,8 +2,7 @@
 echo 'deb https://github.com/gushmazuko/metasploit_in_termux/raw/master gushmazuko main'  | tee $PREFIX/etc/apt/sources.list.d/gushmazuko.list
 
 pkg install -y gnupg
-curl -fsSL https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/gushmazuko-gpg.pubkey | gpg --dearmor | tee $PREFIX/etc/apt/trusted.gpg.d/gushmazuko-repo.gpg
-
+curl -fsSL https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/gushmazuko-gpg.pubkey | gpg --dearmor | tee $PREFIX/etc/apt/trusted.gpg.d/gushmazuko-repo.gpg > /dev/null 2&>1
 # Set low priority for all gushmazuko repository (for security purposes)
 # Set highest priority for ruby package from gushmazuko repository
 echo '## Set low priority for all gushmazuko repository (for security purposes)
