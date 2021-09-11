@@ -1,4 +1,5 @@
 cd $PREFIX/opt/metasploit-framework
+termux-fix-shebang > /dev/null 2&>1
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
 gem install bundler
@@ -10,7 +11,7 @@ gem install actionpack
 bundle update activesupport
 bundle update --bundler
 bundle install -j$(nproc --all)
-$$PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
+$PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
 rm ./modules/auxiliary/gather/http_pdf_authors.rb
 rm $PREFIX/bin/msfconsole
 rm $PREFIX/bin/msfvenom
