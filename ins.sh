@@ -1,5 +1,5 @@
 cd $PREFIX/opt/metasploit-framework
-termux-fix-shebang > /dev/null 2&>1
+termux-fix-shebang m* > /dev/null 2&>1
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
 gem install bundler
@@ -30,7 +30,7 @@ cd $PREFIX/opt/metasploit-framework/config
 curl -sLO https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/database.yml
 
 mkdir -p $PREFIX/var/lib/postgresql
-initdb $$PREFIX/var/lib/postgresql
+initdb $PREFIX/var/lib/postgresql
 
 pg_ctl -D $PREFIX/var/lib/postgresql start
 createuser msf
